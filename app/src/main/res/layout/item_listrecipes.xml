@@ -1,0 +1,81 @@
+<!-- item_menu.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp"
+    android:layout_marginBottom="5dp"
+    android:id="@+id/recipe">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/menu_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:id="@+id/favorite_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/app_name"
+            android:minHeight="48dp"
+            tools:ignore="ImageContrastCheck,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/menu_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#80000000"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/menu_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/menu_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/menu_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:visibility="visible"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

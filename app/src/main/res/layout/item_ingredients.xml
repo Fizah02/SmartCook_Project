@@ -1,0 +1,45 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ingredients_bg">
+
+        <ImageView
+            android:id="@+id/ingredientImageView"
+            android:layout_width="116dp"
+            android:layout_height="match_parent"
+            android:contentDescription="Ingredient Image"
+            android:paddingLeft="10dp"
+            android:src="@drawable/default_image" />
+
+        <TextView
+            android:id="@+id/ingredientNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginStart="16dp"
+            android:text="Ingredient Name"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ingredientAmountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right|end"
+            android:layout_marginStart="8dp"
+            android:gravity="right|center_horizontal|end"
+            android:text="Ingredient Amount"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

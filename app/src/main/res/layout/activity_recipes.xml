@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListRecipes">
+
+    <!-- Title "Recipes" at the top -->
+
+    <!-- TabLayout below the title -->
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="79dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/recipes"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:contentDescription="@string/app_name"
+        app:tabMode="scrollable" />
+
+    <!-- FrameLayout for fragment container below TabLayout -->
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabLayout"/>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "266709623232",
+    "project_id": "smartcook-8bb71",
+    "storage_bucket": "smartcook-8bb71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266709623232:android:cfb702095ad456b87a6825",
+        "android_client_info": {
+          "package_name": "com.example.smartcook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266709623232-s9t66m67e2a2dmnu1qp0mt337ktp9u9s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChOPLuMkCmezhRyQJCFM0xFu4ArZOZT4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "266709623232-s9t66m67e2a2dmnu1qp0mt337ktp9u9s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
